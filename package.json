@@ -3,9 +3,8 @@
   "description": "A chat room that uses React and socket",
   "version": "0.0.1",
   "scripts": {
-    "start": "node ./bin/www",
-    "server": "nodemon ./bin/www",
-    "watch": "watchify -t reactify js/main.jsx -o public/javascripts/bundle.js -v"
+    "server": "node server.js",
+    "watch": "watchify public/js/index.js -o public/js/application.js"
   },
   "dependencies": {
     "express": "4.6.1",
