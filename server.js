@@ -19,15 +19,13 @@ app.get('/', function (request, response) {
   response.render('index');
 });
 
-// app.post('/connection', function (request, response) {
-//   io.sockets.emit('newConnection');
-// });
-
 io.on('connection', function (socket) {
   connections++;
+  socket.emit('newConnect', { numUsers: connections });
 
   socket.on('disconnect', function () {
     connections--;
+    socket.emit('newDisconnect', { numUsers: connections });
   });
 });
 
