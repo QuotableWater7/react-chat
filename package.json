@@ -1,20 +1,12 @@
 {
-  "name": "ChatReact",
-  "description": "A chat room that uses React and socket",
+  "name": "jt_express",
+  "description": "JT messing with express",
   "version": "0.0.1",
-  "scripts": {
-    "server": "node server.js",
-    "watch": "watchify public/js/index.js -o public/js/application.js"
-  },
   "dependencies": {
     "express": "4.6.1",
     "jade": "1.4.2",
     "socket.io": "1.0.6",
     "underscore": "1.6.0",
-    "body-parser": "1.4.3",
-    "react": "*"
-  },
-  "devDependencies": {
-    "browserify": "latest"
+    "body-parser": "1.4.3"
   }
 }
